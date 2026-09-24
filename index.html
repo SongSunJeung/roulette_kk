@@ -92,16 +92,16 @@
         updateBannerView();
       }
 
-      var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/{{{ LOADER_FILENAME }}}";
+var buildUrl = "Build";
+      var loaderUrl = buildUrl + "/Web_R.loader.js";
       var config = {
-        dataUrl: buildUrl + "/{{{ DATA_FILENAME }}}",
-        frameworkUrl: buildUrl + "/{{{ FRAMEWORK_FILENAME }}}",
-        codeUrl: buildUrl + "/{{{ CODE_FILENAME }}}",
+        dataUrl: buildUrl + "/Web_R.data",
+        frameworkUrl: buildUrl + "/Web_R.framework.js",
+        codeUrl: buildUrl + "/Web_R.wasm",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "{{{ COMPANY_NAME }}}",
-        productName: "{{{ PRODUCT_NAME }}}",
-        productVersion: "{{{ PRODUCT_VERSION }}}",
+        companyName: "DefaultCompany",
+        productName: "딱좋은 룰렛",
+        productVersion: "1.0",
         showBanner: unityShowBanner,
       };
 
